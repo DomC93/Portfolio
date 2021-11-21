@@ -16,30 +16,28 @@
 
 <body>
 	<header>
-		<div>
-			<img src="img/Logo.png" alt="Your Work"/>
-			<nav>
-				<ul>
-					<li><a href="index.html">Work</a></li>
-					<li><a href="about.html" target="_blank">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-	  </div>
-	</header>
+		<div id="navigaton">
+			<img src="img/Logo.png" alt="Your Work" class="logo"/>
+				<nav>
+					<ul>
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html" target="_blank">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+                	</ul>
+				</nav>
+	 	 	</div>
+		</header>
 	<main>
 		<!-- For the hero section -->
+	<div id="hero">
+			<div class="container">
+				<h1>Hi My Name Is Dominick Costanzo<br><span>Im a UI Designer</span></h1>
+				<p>placeholder paragraph</p>
+			</div>
 	<div>
-		<div>
-			<h1>Hi My Name Is Dominick Costanzo<br>
-			<span>Im a UI Designer</span>
-			</h1>
-			<p>placeholder paragraph</p>
-		</div>
-		<div>
-			<div>
-				<h2>My Work</h2>
-				<div>
+		<div class="container">
+			<h2>My Work</h2>
+				<div class="row">
 					<picture>
 						<source srcset="img/alt/alt_600.jpg" media="(max-width:767px)">
   						<img src="img/alt/alt-portfolio_1200.jpg" alt="My Image">
@@ -54,7 +52,7 @@
 			</div>
 		</div>
 		<div>
-			<div>
+			<div class="container">
 				<h2>My Work</h2>
 				<div>
 					<picture>
@@ -64,8 +62,7 @@
 				</div>
 				<div>
 					<h3>Explorer - Location Based app</h3>
-					<p>The development of the responsive web application called “Explorer” I learned the correct process of making a responsive web application that works on mobile, tablet and desktop screens using a “mobile first” approach. Throughout this process. I also developed user personas and conducted user interviews to help me develop the correct functionality and layout to appeal to my users.
-					</p>
+						<p>The development of the responsive web application called “Explorer” I learned the correct process of making a responsive web application that works on mobile, tablet and desktop screens using a “mobile first” approach. Throughout this process. I also developed user personas and conducted user interviews to help me develop the correct functionality and layout to appeal to my users.</p>
 					<a href="#">View Project</a>
 				</div>
 			</div>
@@ -73,27 +70,25 @@
 	</div>
 	</main>
 	<footer id="contact">
-		<div>
+		<div class="container">
 		  <h2>Get in Touch</h2>
 			<p> Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="#">631-903-4512</a> or Skype me at blank. Prefer sending an email?
 			</p>
 			<div>
-				<a href="mailto:dcostanz93@gmail.com" class="button contact">send email</a>
+			<a href="mailto:dcostanz93@gmail.com" class="button contact">send email</a>
 			</div>
-			<div>
-					<a href="https://www.instagram.com/designin_vibin/" target="_blank"><img src="img/Social-Icons/Instagram_Icon.svg" height="20" alt=""/>
+			<div class="social_icons">
+				<a href="https://www.instagram.com/designin_vibin/" target="_blank"><img src="img/Social-Icons/Instagram_Icon.svg" height="20" alt=""/>
 				</a>
 				<a href="https://www.behance.net/dominickcostanzo" target="_blank">
-					<img src="img/Social-Icons/Behance_Icon.svg" alt=""/>
+				<img src="img/Social-Icons/Behance_Icon.svg" alt=""/>
 			    </a>
 				<a href="https://dribbble.com/designin_vibin" target="_blank">
-					<img src="img/Social-Icons/Dribbble_Icon.svg" height="20" alt=""/>
+				<img src="img/Social-Icons/Dribbble_Icon.svg" height="20" alt=""/>
 				</a>
 			</div>
-		  <p>Copyright Dominick Costanzo 2020-2021
-			</p>
+		    <p>Copyright Dominick Costanzo 2020-2021</p>
 		</div>
-		
 	</footer>
 </body>
 </html>
