@@ -13,6 +13,7 @@
 
 .container {
   padding: 0 15px;
+  text-align: center;
 }
 
 header {
@@ -133,6 +134,7 @@ text-decoration: none
   color: white;
   text-transform: uppercase;
   border-style: none;
+  
 }
 
 .button.contact:hover {
@@ -143,10 +145,10 @@ text-decoration: none
 }
 
 .social_icons {
-display: inline-block;
-width:30px;
+width:20px;
 margin:15px;
 }
+
 
 #work .row { 
 	padding-bottom: 25px; 
@@ -164,9 +166,16 @@ margin:15px;
   width: 100%;
 }
 
-footer > ul{
-
-	display: inline-block;
+footer{
 }
+
+.social_icons > ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 
 
