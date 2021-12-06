@@ -3,6 +3,7 @@
 
 * {
   box-sizing: border-box;
+  padding:0 10px;
 }
 
 .logo{
@@ -13,6 +14,9 @@
 
 .container {
   padding: 0 15px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: auto;
 }
 
 header {
@@ -23,6 +27,7 @@ header {
     border-bottom-color: #D7D7D7;
 	background-color: white;
 	padding-top: 10px;
+	
 
 }
 
@@ -62,7 +67,7 @@ h1, h2, h3, h4 {
 	
 }
 h1 {
-  font-size: 2.25em;
+  font-size: 1.75em;
   font-weight: 700;
   text-align: center;
 }
@@ -84,11 +89,14 @@ h4 {
 p{
 	font-weight: 300;
 	padding: 0 10px;
+	font-size: .85em;
+	
 }
 
-img {
-  width: 100%;
+img{
+	width:100%;
 }
+
  
 a {
   color:#C2C1C1;
@@ -97,7 +105,7 @@ a {
 }
 a:hover,
 a:focus {
-  color:#01172E;
+  color:#6798BA;
 
 }
 
@@ -110,21 +118,28 @@ a:active { /* selected link */
 text-decoration: none
 }
 
+.getintouch{
+	text-align: center;
+}
+
 .button{
   display: inline-block; 
   border-style: solid;
-  border-color: #767676;
+  border-width: 2px;
+  border-color: #7792BB;
   font-weight: 400;
-  padding: 10px;
-  transition: 0.6s opacity;
+  padding: 10px 30px;
   text-align: center;
+  transition-duration: 1.2s;
+  transition-property: opacity;
+  margin:20px;
 }
 
 .button:hover {
   text-decoration: none;
   color:#ffffff; 
-  background-color:#767676;
-  transition: 0.6s opacity;
+  background-color:#7792BB;
+  opacity: .8;
 }
 
 .button.contact {
@@ -149,14 +164,42 @@ margin:15px;
 display:inline;
 }
 
-.container > picture > img{
-	width:30%;
-	max-width:40%;
+.tools_img {
+	
+	width: 200px;
 }
 
-picture{
+.project_img_lg{
+	width: 90%;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+#hero_image{
+	
+	width:100%;
+}
+
+#about{
+	
+	margin-top: 50px ;
+}
+
+footer{ 
+	margin-top: 40px;
+	background-color: #C4E3F1;
+  	animation-name: example;
+  	animation-duration: 6s;
+	animation-iteration-count: infinite;
 	
 }
+
+@keyframes example {
+   from {background-color: #C4E3F1;}
+  to {background-color: #84ABC6;}
+}
+
+
 
 
 #work .row { 
@@ -175,8 +218,6 @@ picture{
   width: 100%;
 }
 
-footer{
-}
 
 
 #social_icons {
@@ -192,15 +233,47 @@ footer{
 
 #social_icons > ul > li {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   
 }
 
-#social_icons > ul > li > img{
- 
- font-weight: 700;
- max-width: 30px;
+.propic {
+		
+		max-width: 800px;
+		text-align: center;
+		margin: 50px auto;
+		
+	}
+
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
 }
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -219,20 +292,65 @@ nav {
     margin-top: 4px;
   }
 	
-.logo{
-		max-width:100px;
+.logo {
+	max-width:100px;
 	}
 	
 #hero span {
   display: block;
 }
+	
  .col-md-6 {
   width: 50%;
+  display:table;
+  margin-bottom:50px;
 }
 	
   [class*="col-"] {
   float: left;
 }
+	
+  .container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+	
+  .project_info{
+		text-align: left;
+		margin-left:15px;
+		font-size:.75em;
+	}
+	
+	h3{
+		font-size:1.50em;
+	}
+	
+	.propic {
+		
+		max-width: 800px;
+		text-align: center;
+		margin: 50px auto;
+		
+	}
+	
+	footer{
+		width: 100%;
+		content: "";
+  		clear: both;
+  		display: table;
+		margin-top: 50px;
+		position:relative;
+		
+	}
+	
+	.list_section{
+		
+		background-color:blue;
+	}
+
+
 	
 }
 
@@ -240,13 +358,105 @@ nav {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+	
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+	
+	.col-lg-7{
+		width:60%;
+	}
+	
+	.col-lg-5{
+		width:40%;
+		
+	}
+	
+	.project_info{
+		text-align: left;
+		margin-left:50px;
+		font-size:1.00em;
+	}
+	
+	h3{
+		font-size: 1.75em;
+	}
+	
+	.propic {
+		
+		max-width: 1000px;
+		text-align: center;
+		margin: auto;
+		
+	}
+	
+	  .getintouch{
+  		text-align: center;
+		margin:auto;
+	}
+	
+	.story{
+		max-width: 70%;
+		margin:auto;
+	}
+	
+	.hero_image{
+		width:70%;
+		text-align: center;
+		margin: auto;
+}
+	
+
+	
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+
+
+      .project_info {
+		text-align: left;
+		margin-left:50px;
+		font-size:1.00em;
 }
+		.propic {
+		max-width: 850px;
+		text-align: center;
+		margin:auto;
+		
+	}
+	
+	.skills_section{
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	
+	.list_section {
+		
+		max-width: 70%;
+		margin: 0 auto;
+		
+		
+	}
+	
+	h3{
+		
+		text-align: left;
+		margin-left: 50px;
+	}
+	
+	.hero_image{
+	
+	width:60%;
+}
+	
+	
+
+	}
 
 
 
