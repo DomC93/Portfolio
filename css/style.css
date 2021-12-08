@@ -3,11 +3,11 @@
 
 * {
   box-sizing: border-box;
-  padding:0 10px;
 }
 
 .logo{
 	max-width: 18%;
+ 
 }
 
 /* Layout styling */
@@ -26,7 +26,7 @@ header {
     border-bottom: solid thin;
     border-bottom-color: #D7D7D7;
 	background-color: white;
-	padding-top: 10px;
+	padding: 10px 40px;
 	
 
 }
@@ -88,7 +88,7 @@ h4 {
 
 p{
 	font-weight: 300;
-	padding: 0 10px;
+	padding: 0 20px;
 	font-size: .85em;
 	
 }
@@ -167,13 +167,21 @@ display:inline;
 .tools_img {
 	
 	width: 200px;
+	text-align: center;
+	margin: auto;
 }
 
 .project_img_lg{
-	width: 90%;
-	max-width: 2000px;
-	margin: 0 auto;
+	width: 50%;
+	margin: 30px auto;
 }
+
+.project_img_lg_2{
+	width: 80%;
+	margin: 30px auto;
+}
+
+
 
 #hero_image{
 	
@@ -325,6 +333,8 @@ nav {
 	
 	h3{
 		font-size:1.50em;
+		text-align: center;
+		margin: auto;
 	}
 	
 	.propic {
@@ -347,8 +357,32 @@ nav {
 	
 	.list_section{
 		
-		background-color:blue;
 	}
+	
+	p{
+		
+		max-width: 80%;
+		text-align: center;
+		margin:auto;
+		
+	}
+	
+	.align-h1-left{
+		
+		text-align: left;
+	}
+	
+	.project_img_lg{
+	width: 50%;
+	margin: 30px auto;
+	
+}
+	
+	.project_img_lg_2{
+	width: 60%;
+	margin: 30px auto;
+	padding: 0 10px;
+}
 
 
 	
@@ -382,6 +416,8 @@ Large devices (1024px or larger)
 	
 	h3{
 		font-size: 1.75em;
+		text-align: center;
+		margin: auto;
 	}
 	
 	.propic {
@@ -408,6 +444,10 @@ Large devices (1024px or larger)
 		margin: auto;
 }
 	
+	.project_img_lg{
+	width: 50%;
+	margin: 30px auto;
+}
 
 	
 }
@@ -449,11 +489,22 @@ X-large devices (1440px or larger)
 		margin-left: 50px;
 	}
 	
-	.hero_image{
+	.hero_image {
 	
 	width:60%;
 }
 	
+	.project_img_lg{
+	width: 30%;
+	margin: 30px auto;
+}
+	.project_screen_lg {
+	width: 60%;
+	margin: 30px auto;
+		
+		
+		
+	}
 	
 
 	}
