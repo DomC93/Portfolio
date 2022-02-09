@@ -132,6 +132,27 @@ a:active { /* selected link */
   transition-property: opacity;
   margin-top: 20px;
 }
+
+.button-project {
+  display: inline-block;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #7792BB;
+  font-weight: 400;
+  padding: 10px 30px;
+  text-align: center;
+  transition-duration: 1.2s;
+  transition-property: opacity;
+  margin: 20px 35px;
+}
+
+.button-project:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7792BB;
+  opacity: .8;
+}
+
 .button:hover {
   text-decoration: none;
   color: #ffffff;
@@ -393,6 +414,11 @@ Large devices (1024px or larger)
 	.button {
     text-align: center;
   }
+	
+	.button-project{
+		margin: 20px 55px;
+		
+	}
 }
 /* ==============================
 X-large devices (1440px or larger)
