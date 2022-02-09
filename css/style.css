@@ -97,7 +97,7 @@ h4 {
 p {
   font-weight: 300;
   padding: 0 20px;
-  font-size: .85em;
+  font-size: 1.25em;
 }
 img {
   width: 100%;
@@ -293,7 +293,7 @@ Medium devices (640px and larger)
   .project_info {
     text-align: left;
     margin-left: 15px;
-    font-size: .75em;
+    font-size: .9em;
 	padding-top: 20px; 
   }
   h3 {
@@ -363,7 +363,7 @@ Large devices (1024px or larger)
   .project_info {
     text-align: left;
     margin-left: 35px;
-    font-size: .79em;
+    font-size: 1em;
   }
 	
 	.smaller_para{
@@ -427,7 +427,6 @@ X-large devices (1440px or larger)
   .project_info {
     text-align: left;
     margin-left: 40px;
-    font-size: .85em;
   }
   .propic {
     max-width: 850px;
